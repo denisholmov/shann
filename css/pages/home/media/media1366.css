@@ -1,0 +1,100 @@
+.header {
+	z-index: 1;
+	margin: 10px 0 0;
+ }
+
+ .header__container {
+	max-width: 1057px;
+ }
+
+ /* block-text */
+
+ .block-text__title {
+	font-size: 49px;
+ }
+
+ .block-text__text {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 18px;
+ }
+
+ /* get-started  */
+
+ .get-started {
+	max-height: 300px;
+	margin-bottom: 250px;
+ }
+
+ .get-started__container {
+	max-width: 1057px;
+ }
+
+ .get-started__content {
+	margin-top: 110px;
+ }
+
+ .get-started__button {
+	padding: 12px 36px;
+	font-size: 12px;
+ }
+
+ .get-started__call-us {
+	padding: 9px 19px;
+	margin-left: 16px;
+ }
+
+ .get-started__call-us span {
+	font-size: 10px;
+ }
+
+ .get-started__image {
+	top: 85px;
+	left: 350px;
+ }
+
+ .get-started__image img {
+	width: 750px;
+ }
+
+ /* evolution-tech */
+
+ .evolution-tech {
+	max-width: 1346px;
+	max-height: 767px;
+	padding: 90px 0 120px;
+	margin: 0 auto 20px;
+ }
+
+ .evolution-tech__container {
+	max-width: 1057px;
+ }
+
+ /* engine */
+ .engine {
+	max-width: 1346px;
+	max-height: 767px;
+	padding: 140px 120px;
+ }
+
+ .engine__container {
+	max-width: 1057px;
+ }
+
+ .engine__title {
+	margin-bottom: 40px;
+	font-size: 50px;
+ }
+
+ .engine__characteristics {
+	padding-left: 23px;
+	font-size: 17px;
+ }
+
+ .engine__characteristics li {
+	margin-bottom: 35px;
+ }
+
+ .engine__image img {
+	width: 530px;
+ }

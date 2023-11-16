@@ -28,21 +28,4 @@ loaderBtn3.addEventListener('mouseout', () => {
   loaderInf.classList.add(loaderInfClassNone);
 });
 
-window.addEventListener('scroll', (e) => {
-  document.body.style.cssText = `--scrollTop: ${this.scrollY}px`;
 
-  let blockRectEvolutionTech = evolutionTech.getBoundingClientRect();
-  let blockTop = blockRectEvolutionTech.top;
-  let blockBottom = blockRectEvolutionTech.bottom;
-
-  const windowHeight = window.innerHeight;
-  let scrollTop = window.scrollY;
-
-  if (blockTop <= 0) {
-    evolutionTech.classList.add(evolutionTechSliderBlock);
-  }
-
-  //   if (blockBottom <= 0) {
-  //     evolutionTech.classList.remove(evolutionTechSliderBlock);
-  //   }
-});

@@ -1,0 +1,23 @@
+/* evolution-tech ================================================= */
+
+.evolution-tech {
+	position: relative;
+	max-width: 1840px;
+	max-height: 910px;
+	padding: 110px 0 186px;
+	border-radius: 60px;
+	margin: 0 auto 20px;
+	background-color: var(--white);
+ }
+ 
+ .evolution-tech__container {
+	display: flex;
+	max-width: 1440px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+ }
+ 
+ 

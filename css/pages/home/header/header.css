@@ -1,0 +1,51 @@
+/* header ---------------------------------- */
+
+.header {
+	z-index: 1;
+	margin: 10px 0 0;
+ }
+ 
+ .header__container {
+	display: flex;
+	max-width: 1440px;
+	min-height: 70px;
+	align-items: center;
+	border-radius: 15px;
+	margin: 0 auto;
+	background-color: var(--white);
+ }
+ 
+ .header__logo {
+	flex: 1 1 auto;
+	justify-content: flex-start;
+	margin: 0 0 0 25px;
+ }
+ 
+ .header__phone {
+	padding: 0 40px 0 0;
+	color: #2b2e3e;
+	font-size: 18px;
+	font-weight: 700;
+ }
+ 
+ .header__button {
+	flex: 0 0 190px;
+	padding: 16px 40px;
+	border-radius: 5px;
+	margin-right: 10px;
+	background-color: var(--sky-of-magritte);
+	color: var(--white);
+	font-family: 'Gilroy';
+	font-size: 14px;
+	font-weight: 700;
+	transition: background-color 0.3s ease 0s;
+ }
+ 
+ .header__buttonPhone {
+	display: none;
+ }
+ 
+ .header__button:hover {
+	background-color: var(--skyan);
+	color: var(--sky-of-magritte);
+ }

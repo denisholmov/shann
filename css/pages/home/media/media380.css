@@ -1,0 +1,253 @@
+/* media 380 --------------------------*/
+
+/* header  */
+.header {
+	margin: 10px 0 0 0;
+ }
+
+ .header__container {
+	max-width: 350px;
+	min-height: 55px;
+	border-radius: 10px;
+ }
+
+ .header__logo {
+	justify-content: center;
+ }
+
+ .header__logo img {
+	vertical-align: middle;
+	width: 123px;
+ }
+
+ .header__phone {
+	padding: 0 15px 0 0;
+
+	font-size: 14px;
+ }
+
+ .header__buttonPhone {
+	display: inline-flex;
+	flex: 0 0 45px;
+ }
+
+ .header__buttonPhone img {
+	width: 23px;
+ }
+
+ /* block-text  */
+
+ .block-text {
+ }
+
+ .block-text__title {
+	font-size: 28px;
+	line-height: 1;
+ }
+
+ .block-text__text {
+	margin-top: 15px;
+	margin-bottom: 30px;
+
+	font-size: 16px;
+ }
+
+ /* get-started  */
+
+ .get-started {
+	max-height: 350px;
+	margin-bottom: 250px;
+ }
+
+ .get-started__container {
+	max-width: 350px;
+ }
+
+ .get-started__content {
+	flex: 1 1 auto;
+	margin-top: 10px;
+ }
+
+ .get-started__button {
+	width: 350px;
+	min-height: 55px;
+	margin-bottom: 10px;
+
+	font-size: 14px;
+ }
+
+ .get-started__call-us {
+	width: 350px;
+	min-height: 55px;
+	align-items: center;
+	box-sizing: border-box;
+	margin-left: 0;
+	justify-content: center;
+ }
+
+ .get-started__call-us span {
+	margin-left: 6px;
+
+	font-size: 13px;
+	font-weight: 400;
+ }
+
+ .get-started__image {
+	padding-top: 20px;
+	position: relative;
+	left: -40px;
+	top: 0;
+	z-index: 1;
+ }
+
+ .get-started__image img {
+	width: 400px;
+ }
+
+ /* evolution-tech */
+
+ .evolution-tech {
+	max-width: 370px;
+	max-height: 1200px;
+	margin: 0 auto 15px;
+	padding: 50px 0 50px 0;
+
+	border-radius: 15px;
+ }
+
+ .evolution-tech .block-text__title {
+	display: inline-block;
+	width: 350px;
+	font-size: 30px;
+ }
+
+ .evolution-tech .block-text__text {
+	width: 270px;
+	font-size: 16px;
+ }
+
+ .evolution-tech__container {
+	max-width: 350px;
+ }
+
+ .loader {
+	display: flex;
+	flex-direction: column;
+ }
+
+ .loader__image {
+	margin-bottom: 45px;
+	margin-right: 0;
+ }
+
+ .loader__image_front,
+ .loader__image_back {
+	width: 278px;
+ }
+
+ .loader__image:last-child {
+	margin-bottom: 0;
+ }
+
+ #loader-transparent-id {
+	width: 278px;
+	z-index: -3;
+ }
+
+ .loader__housing {
+	width: 278px;
+
+	position: absolute;
+	left: 0;
+	z-index: -3;
+ }
+
+ .loader__image button img {
+	width: 30px;
+ }
+
+ .loader__btn_1 {
+	top: 80px;
+	left: 18px;
+ }
+
+ .loader__btn_2 {
+	top: 315px;
+	left: 50%;
+	transform: translateX(-50%);
+ }
+
+ .loader__btn_3 {
+	top: 8px;
+	right: 61px;
+ }
+
+ .loader__btn_4 {
+	bottom: 30px;
+	left: 50px;
+ }
+
+ .loader__inf {
+	padding: 20px 25px;
+
+	background-color: #f3f5fb;
+	border-radius: 10px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+
+	top: 70px;
+	right: 40px;
+ }
+
+ .loader__inf::before {
+	background-image: url("../img/evolution-tech/triangle.png");
+	background-size: 16px 16px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	content: url("");
+	position: absolute;
+	left: 155px;
+	top: -13px;
+	z-index: -1;
+
+	transform: rotate(90deg);
+ }
+
+ .loader__inf p {
+	font-size: 14px;
+ }
+
+ /* engine */
+ .engine {
+	max-width: 370px;
+	max-height: 705px;
+	padding: 50px 0;
+
+	border-radius: 15px;
+ }
+
+ .engine__container {
+	max-width: 350px;
+ }
+ .engine__content {
+	margin-bottom: 35px;
+ }
+
+ .engine__title {
+	margin-bottom: 35px;
+
+	font-size: 30px;
+ }
+
+ .engine__characteristics {
+	font-size: 16px;
+	line-height: 1.2;
+ }
+
+ .engine__characteristics li {
+	margin-bottom: 15px;
+ }
+
+ .engine__image img {
+	width: 300px;
+ }

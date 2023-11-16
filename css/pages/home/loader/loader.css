@@ -1,0 +1,97 @@
+.loader {
+	display: flex;
+ }
+ 
+ .loader__image {
+	position: relative;
+	z-index: 1;
+	margin-right: 100px;
+ }
+ 
+ .loader__image_front,
+ .loader__image_back {
+	width: 278px;
+ }
+ 
+ .loader__image:last-child {
+	margin-right: 0;
+ }
+ 
+ .loader__image button {
+	position: absolute;
+	z-index: 6;
+	border-radius: 50%;
+ }
+ 
+ .loader__back_none {
+	display: none;
+ }
+ 
+ #loader-transparent-id {
+	width: 278px;
+ }
+ 
+ .loader__transparent_none {
+	display: none;
+ }
+ 
+ .loader__housing {
+	position: absolute;
+	z-index: 4;
+	left: 0;
+	width: 278px;
+ }
+ 
+ .loader__btn_1 {
+	top: 80px;
+	left: 18px;
+ }
+ 
+ .loader__btn_2 {
+	top: 315px;
+	left: 50%;
+	transform: translateX(-50%);
+ }
+ 
+ .loader__btn_3 {
+	top: 8px;
+	right: 61px;
+ }
+ 
+ .loader__btn_4 {
+	bottom: 30px;
+	left: 50px;
+ }
+ 
+ .loader__inf_none {
+	display: none;
+ }
+ 
+ .loader__inf {
+	position: absolute;
+	top: 5px;
+	right: -250px;
+	padding: 25px 30px;
+	border-radius: 15px;
+	background-color: var(--cotton-ball);
+	box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+ }
+ 
+ .loader__inf::before {
+	position: absolute;
+	z-index: -1;
+	top: 10px;
+	left: -13px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url('../../../../public/img/evolution-tech/triangle.png');
+	background-size: 16px 16px;
+	content: url('');
+ }
+ 
+ .loader__inf p {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2;
+ }

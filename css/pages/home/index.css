@@ -6,8 +6,8 @@
 @import url('./loader/loader.css');
 @import url('./engine/engine.css');
 
-@import url("./media/media2560.css") (max-width: 2560px);
-@import url("./media/media1920.css") (max-width: 1920px);
+@import url("./media/media2560.css") (min-width: 1921px) and (max-width: 2560px);
+@import url("./media/media1920.css") (min-width: 1861px) and (max-width: 1920px);
 @import url("./media/media1366.css") (max-width: 1366px);
 @import url("./media/media768.css") (max-width: 768px);
 @import url("./media/media380.css") (max-width: 380px);

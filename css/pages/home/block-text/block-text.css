@@ -1,0 +1,18 @@
+
+
+.block-text__title {
+	color: #2b2e3e;
+	font-size: 68px;
+	font-weight: 700;
+ }
+ 
+ .block-text__title_blue {
+	color: var(--sky-of-magritte);
+ }
+ 
+ .block-text__text {
+	margin-top: 45px;
+	margin-bottom: 70px;
+	font-size: 24px;
+	font-weight: 500;
+ }
