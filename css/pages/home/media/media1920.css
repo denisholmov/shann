@@ -1,15 +1,8 @@
-/* header */
 
-.wrapper {
-	z-index: 0;
- }
-
- .header {
-	z-index: 0;
-	transform: translate3d(0, var(--scrollTop), 0);
- }
-
- 
+.header {
+	width: 100%;
+	position: sticky;
+}
  /* block-text */
 
  .block-text__title {
@@ -55,10 +48,6 @@
 	max-height: 1070px;
 	padding: 100px 0 166px;
 
- }
-
- .evolution-tech_sliderBlock {
-	 
  }
 
  .loader {

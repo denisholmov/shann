@@ -3,7 +3,9 @@
 .header {
 	z-index: 1;
 	margin: 10px 0 0;
+	
  }
+ 
  
  .header__container {
 	display: flex;
@@ -12,6 +14,7 @@
 	align-items: center;
 	border-radius: 15px;
 	margin: 0 auto;
+
 	background-color: var(--white);
  }
  
@@ -20,6 +23,8 @@
 	justify-content: flex-start;
 	margin: 0 0 0 25px;
  }
+
+
  
  .header__phone {
 	padding: 0 40px 0 0;
