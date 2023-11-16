@@ -57,7 +57,7 @@
   overflow: hidden;
   min-height: 100%;
   flex-direction: column;
-  background-color: #f0f3f9;
+  background-color: var(--boysenberry-shadow);
 }
 
 /* .wrapper:before {
@@ -108,7 +108,7 @@
   align-items: center;
   border-radius: 15px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .header__logo {
@@ -129,8 +129,8 @@
   padding: 16px 40px;
   border-radius: 5px;
   margin-right: 10px;
-  background-color: #009bff;
-  color: #fff;
+  background-color: var(--sky-of-magritte);
+  color: var(--white);
   font-family: 'Gilroy';
   font-size: 14px;
   font-weight: 700;
@@ -142,8 +142,8 @@
 }
 
 .header__button:hover {
-  background-color: #69c3ff;
-  color: #009bff;
+  background-color: var(--skyan);
+  color: var(--sky-of-magritte);
 }
 
 /* block-text -------------------------------------- */
@@ -155,7 +155,7 @@
 }
 
 .block-text__title_blue {
-  color: #009bff;
+  color: var(--sky-of-magritte);
 }
 
 .block-text__text {
@@ -195,15 +195,15 @@
 .get-started__button {
   padding: 15px 40px;
   border-radius: 5px;
-  background-color: #009bff;
-  color: #fff;
+  background-color: var(--sky-of-magritte);
+  color: var(--white);
   font-size: 16px;
   font-weight: 700;
 }
 
 .get-started__button:hover {
-  background-color: #69c3ff;
-  color: #009bff;
+  background-color: var(--skyan);
+  color: var(--sky-of-magritte);
 }
 
 .get-started__call-us {
@@ -211,10 +211,10 @@
   box-sizing: border-box;
   align-items: center;
   padding: 13px 23px;
-  border: 2px dashed #bfc9e0;
+  border: 2px dashed var(--hindsight);
   border-radius: 5px;
   margin-left: 16px;
-  background-color: #f4f6fb;
+  background-color: var(--white-solid);
 }
 
 .get-started__call-us span {
@@ -242,7 +242,7 @@
   padding: 110px 0 186px;
   border-radius: 60px;
   margin: 0 auto 20px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .evolution-tech__container {
@@ -330,7 +330,7 @@
   right: -250px;
   padding: 25px 30px;
   border-radius: 15px;
-  background-color: #f3f5fb;
+  background-color: var(--cotton-ball);
   box-shadow: 0 0 3px rgb(0 0 0 / 20%);
 }
 
@@ -360,7 +360,7 @@
   padding: 190px 170px;
   border-radius: 60px;
   margin: 0 auto;
-  background-color: #0090ed;
+  background-color: var(--pervenche);
 }
 
 .engine__container {
@@ -378,7 +378,7 @@
 
 .engine__title {
   margin-bottom: 50px;
-  color: #fff;
+  color: var(--white);
   font-size: 68px;
   font-weight: 700;
 }
@@ -389,7 +389,7 @@
 
 .engine__characteristics {
   padding-left: 23px;
-  color: #fff;
+  color: var(--white);
   font-size: 24px;
   font-weight: 500;
 }
@@ -423,7 +423,7 @@
     align-items: center;
     border-radius: 15px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--white);
   }
 
   .header__logo {
@@ -444,8 +444,8 @@
     padding: 16px 40px;
     border-radius: 5px;
     margin-right: 10px;
-    background-color: #009bff;
-    color: #fff;
+    background-color: var(--sky-of-magritte);
+    color: var(--white);
     font-family: Gilroy;
     font-size: 14px;
     font-weight: 700;
@@ -457,8 +457,8 @@
   }
 
   .header__button:hover {
-    background-color: #69c3ff;
-    color: #009bff;
+    background-color: var(--skyan);
+    color: var(--sky-of-magritte);
   }
 
   /* block-text  */
@@ -470,7 +470,7 @@
   }
 
   .block-text__title_blue {
-    color: #009bff;
+    color: var(--sky-of-magritte);
   }
 
   .block-text__text {
@@ -747,7 +747,7 @@
     padding: 12px;
     border-radius: 5px;
     margin-right: 10px;
-    background-color: #c8ebff;
+    background-color: var(--lucid-dreams);
   }
 
   .header__buttonPhone img {
@@ -912,7 +912,7 @@
     right: 100px;
     padding: 25px 30px;
     border-radius: 15px;
-    background-color: #f3f5fb;
+    background-color: var(--cotton-ball);
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
   }
 
@@ -951,7 +951,7 @@
 
   .engine__title {
     margin-bottom: 50px;
-    color: #fff;
+    color: var(--white);
     font-size: 68px;
     font-weight: 700;
   }
@@ -1164,7 +1164,7 @@
     right: 40px;
     padding: 20px 25px;
     border-radius: 10px;
-    background-color: #f3f5fb;
+    background-color: var(--cotton-ball);
     box-shadow: 0 0 3px rgb(0 0 0 / 20%);
   }
 
