@@ -8,3 +8,42 @@
   flex-direction: column;
   background-color: var(--color-boysenberry-shadow);
 }
+
+/* .wrapper:before {
+  content: "";
+
+  width: 895px;
+  height: 885px;
+
+  background-image: url("../img/get-started/frame-right.png");
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: 150px;
+  top: 0;
+  z-index: 0;
+} */
+
+/* .wrapper:after {
+  content: "";
+
+  width: 992px;
+  height: 885px;
+
+  background-image: url("../img/get-started/frame-right.png");
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 10px;
+  top: 0;
+  z-index: 0;
+} */
+
+.main {
+	flex: 1 1 auto;
+ }
+
+
+ 
+ 
+
