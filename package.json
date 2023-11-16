@@ -1,0 +1,25 @@
+{
+  "name": "shann-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "",
+    "format-lint": "npx eslint --fix .",
+    "format-prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|ts|tsx|json|css|scss|saas)\"",
+    "format-style": "stylelint --ignore-path .gitignore \"**/*.+(css|scss|saas)\" --fix",
+    "prepare-code-format": "npm-run-all --parallel format-lint format-style format-prettier"
+  },
+  "devDependencies": {
+    "cross-env": "~7.0.3",
+    "eslint": "~8.20.0",
+    "eslint-config-prettier": "~8.5.0",
+    "eslint-plugin-prettier": "~4.2.1",
+    "eslint-plugin-simple-import-sort": "~10.0.0",
+    "npm-run-all": "~4.1.5",
+    "prettier": "~2.7.1",
+    "stylelint": "~15.10.3",
+    "stylelint-config-idiomatic-order": "~9.0.0",
+    "stylelint-config-recommended": "~13.0.0",
+    "stylelint-order": "~6.0.3"
+  }
+}

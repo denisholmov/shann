@@ -1,0 +1,356 @@
+/* ПЕРЕМЕННЫЕ */
+
+:root {
+  /* === Шрифты === */
+
+  --font-family-system: system-ui, -apple-system, 'Segoe UI', roboto,
+    'Helvetica Neue', helvetica, sans-serif;
+
+  /* === Время действия эффектов === */
+
+  --short-delay: 0.1s;
+  --medium-delay: 0.3s;
+  --long-delay: 0.5s;
+  --ultra-long: 1s;
+
+  /* === Цвета === */
+
+  /* Названия цветов берём отсюда: https://colornamer.robertcooper.me/ */
+
+  --color-main: #2b2e3e;
+  --color-disco-ball: #d4d4d4;
+  --color-grey-shingle: #939393;
+  --color-namara-grey: #7c7c7c;
+}
+
+/* ОБЩЕЕ */
+
+/* === Основы === */
+
+/* Указываем box sizing, обнуляем отступы */
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Определяем блочную модель для старых браузеров */
+
+article,
+aside,
+audio,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+img {
+  display: block;
+}
+
+/* Выставляем основные настройки для <body> и <html> */
+
+body {
+  position: relative;
+  min-height: 100vh;
+  color: var(--color-main);
+  font-family: var('Gilroy', --font-family-system);
+  font-size: 24px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+  /* Оптимизация отображения текста */
+
+  text-rendering: optimizespeed;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-disco-ball);
+  box-shadow: 0 0 2px rgb(0 0 0 / 20%) inset;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 3px solid var(--color-disco-ball);
+  border-radius: 8px;
+  background: var(--color-grey-shingle);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--color-namara-grey);
+}
+
+html {
+  position: relative;
+  height: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Все теги, имеющие атрибут "inert" делаем отличными от стилей атрибута "disabled" для правильного восприятия */
+
+[inert],
+[inert] * {
+  cursor: default;
+  opacity: 0.7;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Добавляем классы для блокировки прокручивания контента. Резервируем место под полосу прокрутки, чтобы контент не прыгал при исчезновении скроллбара. */
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+html.isBlockedTouched {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+}
+
+/* === Окна === */
+
+/* Удаляем стандартные браузерные отступы и обводку */
+
+dialog {
+  padding: 0;
+  border: none;
+}
+
+/* === Списки === */
+
+/* Удаляем стандартную стилизацию для тегов списка */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* === Ссылки === */
+
+/* Тег <a>, у которого нет обязательных атрибутов или с "якорем", сбрасываем до дефолтных стилей */
+
+a:not([href]),
+a[href='#'] {
+  border-bottom: 5px solid red !important;
+  color: red !important;
+  text-decoration-skip-ink: auto;
+}
+
+/* === Формы === */
+
+/* Наследуем шрифты для интеррактивных элементов */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Тег <button> по умолчанию должен иметь указатель */
+
+button {
+  cursor: pointer;
+}
+
+/*  Тег <textarea> не должны иметь атрибуты "rows" и "cols" */
+
+textarea[rows],
+textarea[cols] {
+  border-bottom: 5px solid red !important;
+  background-color: red !important;
+  color: red !important;
+}
+
+/*  Тег <input> c "type='file" обязан иметь атрибут "accept" */
+
+input[type='file']:not([accept]) {
+  border-bottom: 5px solid red !important;
+  background-color: red !important;
+  color: red !important;
+}
+
+/*  Тег <input>, <textarea> и <select> не должны иметь атрибут "size" */
+
+input[size],
+textarea[size],
+select[size] {
+  border-bottom: 5px solid red !important;
+  background-color: red !important;
+  color: red !important;
+}
+
+/* === Таблицы === */
+
+/* Избавляемся от стандартных разрывов и границ в <table> */
+
+table {
+  position: relative;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Таблица обязательно должна иметь семантичные теги <thead>, <tbody>, <caption> */
+
+table:not(caption),
+table:not(tbody),
+table:not(thead) {
+  border-bottom: 5px solid red !important;
+  background-color: red !important;
+  color: red !important;
+}
+
+/* Для удобства просмотра шапки при скроле таблицы */
+
+thead th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #ff8630;
+}
+
+/* === Форматирование === */
+
+/* Добавляем для тега <u> волнистое подчёркивание, чтобы ошибки бросались в глаза, и чтобы не спутать их со ссылками. */
+
+u {
+  text-decoration-style: wavy;
+}
+
+/* === Изображения === */
+
+/*  Тег <img>, у которого нет обязательных атрибутов, сбрасываем до дефолтных стилей */
+
+img:not([src]),
+img:not([alt]) {
+  border-bottom: 5px solid red !important;
+  background-color: red !important;
+  color: red !important;
+}
+
+/*  Бывают специфические случаи, когда тегу <img> можно не ставить обязательные атрибуты. Учтём это! */
+
+img.itIsOk {
+  border-bottom: revert;
+  background-color: revert;
+  color: revert;
+}
+
+/* ДОСТУПНОСТЬ */
+
+/* === Семантика === */
+
+/* Делаем тег <mark> более доступным для скринридеров */
+
+mark::before {
+  content: ' [начало выделения] ';
+}
+
+mark::after {
+  content: ' [конец выделения] ';
+}
+
+/* Добавляем удобный разделитель для тега <dt> */
+
+dt::after {
+  content: ': ';
+}
+
+/* === Формы === */
+
+/*  Тег <form> обязан иметь атрибут "novalidate" */
+
+form:not([novalidate]) {
+  border-bottom: 5px solid blue !important;
+  background-color: blue !important;
+  color: blue !important;
+}
+
+/*  Тег <input>, <textarea> и <select> обязаны иметь атрибут "name" и "id" */
+
+input:not([name]),
+input:not([id]),
+textarea:not([name]),
+textarea:not([id]),
+select:not([name]),
+select:not([id]) {
+  border-bottom: 5px solid blue !important;
+  background-color: blue !important;
+  color: blue !important;
+}
+
+/*  Тег <label> обязан иметь атрибут "for" */
+
+label:not([for]) {
+  border-bottom: 5px solid blue !important;
+  background-color: blue !important;
+  color: blue !important;
+}
+
+/* === Изображения === */
+
+/*  Теги <img> обязаны иметь атрибут "width" и "height" для избегания "скачков" в контенте после окончательной загрузки */
+
+img:not([width]),
+img:not([height]) {
+  border-bottom: 5px solid blue !important;
+  background-color: blue !important;
+  color: blue !important;
+}
+
+/* БЕЗОПАСНОСТЬ */
+
+a[target]:not([rel='noopener noreferrer']) {
+  border-bottom: 5px solid green !important;
+  background-color: green !important;
+  color: green !important;
+}
+
+/* ПОЛЬЗОВАТЕЛЬСКИЙ РЕЖИМ РАБОТЫ */
+
+/* === Семантика === */
+
+/* Если поддерживается режим высокой контрастности в Windows, то заменяем цвет на системный у тего <mark> для контрастности */
+
+@media (forced-colors: active) {
+  mark {
+    background-color: Highlight;
+    color: HighlightText;
+  }
+}
+
+/* === Анимация === */
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
