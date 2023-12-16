@@ -2,50 +2,50 @@
   font-family: Gilroy;
   font-style: normal;
   font-weight: normal;
-  src: url('../../publics/fonts/Gilroy-Regular.eot');
+  src: url('../../public/fonts/Gilroy-Regular.eot');
   src: local('Gilroy Regular'), local('Gilroy-Regular'),
-    url('../../publics/fonts/Gilroy-Regular.eot?#iefix')
+    url('../../public/fonts/Gilroy-Regular.eot?#iefix')
       format('embedded-opentype'),
-    url('../../publics/fonts/Gilroy-Regular.woff2') format('woff2'),
-    url('../../publics/fonts/Gilroy-Regular.woff') format('woff'),
-    url('../../publics/fonts/Gilroy-Regular.ttf') format('truetype');
+    url('../../public/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../../public/fonts/Gilroy-Regular.woff') format('woff'),
+    url('../../public/fonts/Gilroy-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 700;
-  src: url('../../publics/fonts/Gilroy-Bold.eot');
+  src: url('../../public/fonts/Gilroy-Bold.eot');
   src: local('Gilroy Bold'), local('Gilroy-Bold'),
-    url('../../publics/fonts/Gilroy-Bold.eot?#iefix')
+    url('../../public/fonts/Gilroy-Bold.eot?#iefix')
       format('embedded-opentype'),
-    url('../../publics/fonts/Gilroy-Bold.woff2') format('woff2'),
-    url('../../publics/fonts/Gilroy-Bold.woff') format('woff'),
-    url('../../publics/fonts/Gilroy-Bold.ttf') format('truetype');
+    url('../../public/fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../../public/fonts/Gilroy-Bold.woff') format('woff'),
+    url('../../public/fonts/Gilroy-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 500;
-  src: url('../../publics/fonts/Gilroy-Medium.eot');
+  src: url('../../public/fonts/Gilroy-Medium.eot');
   src: local('Gilroy Medium'), local('Gilroy-Medium'),
-    url('../../publics/fonts/Gilroy-Medium.eot?#iefix')
+    url('../../public/fonts/Gilroy-Medium.eot?#iefix')
       format('embedded-opentype'),
-    url('../../publics/fonts/Gilroy-Medium.woff2') format('woff2'),
-    url('../../publics/fonts/Gilroy-Medium.woff') format('woff'),
-    url('../../publics/fonts/Gilroy-Medium.ttf') format('truetype');
+    url('../../public/fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../../public/fonts/Gilroy-Medium.woff') format('woff'),
+    url('../../public/fonts/Gilroy-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: Gilroy;
   font-style: normal;
   font-weight: 600;
-  src: url('../../publics/fonts/Gilroy-Semibold.eot');
+  src: url('../../public/fonts/Gilroy-Semibold.eot');
   src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
-    url('../../publics/fonts/Gilroy-Semibold.eot?#iefix')
+    url('../../public/fonts/Gilroy-Semibold.eot?#iefix')
       format('embedded-opentype'),
-    url('../../publics/fonts/Gilroy-Semibold.woff2') format('woff2'),
-    url('../../publics/fonts/Gilroy-Semibold.woff') format('woff'),
-    url('../../publics/fonts/Gilroy-Semibold.ttf') format('truetype');
+    url('../../public/fonts/Gilroy-Semibold.woff2') format('woff2'),
+    url('../../public/fonts/Gilroy-Semibold.woff') format('woff'),
+    url('../../public/fonts/Gilroy-Semibold.ttf') format('truetype');
 }
